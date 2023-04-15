@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C151AAC229EA36AE0008D4B9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C151AAC129EA36AE0008D4B9 /* PusherSwift */; };
+		C151AAC429EB5EFF0008D4B9 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151AAC329EB5EFF0008D4B9 /* ScannerViewController.swift */; };
 		C16A183C29BF7D600045CB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183B29BF7D600045CB72 /* AppDelegate.swift */; };
 		C16A183E29BF7D600045CB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183D29BF7D600045CB72 /* SceneDelegate.swift */; };
 		C16A184029BF7D600045CB72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183F29BF7D600045CB72 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C151AAC329EB5EFF0008D4B9 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		C16A183829BF7D600045CB72 /* VerifyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerifyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16A183B29BF7D600045CB72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C16A183D29BF7D600045CB72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				C16A184929BF7D9B0045CB72 /* Info.plist */,
 				C16A184F29BF80C10045CB72 /* VicWell+ViewController.swift */,
 				C16A185129BF83390045CB72 /* Loader+Extension.swift */,
+				C151AAC329EB5EFF0008D4B9 /* ScannerViewController.swift */,
 			);
 			path = VerifyCode;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16A185229BF83390045CB72 /* Loader+Extension.swift in Sources */,
+				C151AAC429EB5EFF0008D4B9 /* ScannerViewController.swift in Sources */,
 				C16A184029BF7D600045CB72 /* ViewController.swift in Sources */,
 				C16A183C29BF7D600045CB72 /* AppDelegate.swift in Sources */,
 				C16A185029BF80C10045CB72 /* VicWell+ViewController.swift in Sources */,

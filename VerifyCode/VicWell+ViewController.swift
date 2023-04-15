@@ -8,7 +8,7 @@
 import UIKit
 
 class VicWell_ViewController: UIViewController {
-
+    
     //MARK: - Override func
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +19,16 @@ class VicWell_ViewController: UIViewController {
         .lightContent
     }
     
-  
+    
     
     private var isURLVPN : Bool = false
     
-
+    
     //MARK: - Private Var / Let
     private var indexPosition : Int = 0
     
     //MARK: - Public Var / Let
-
+    
     @IBAction func reloadForm(_ sender: UIButton) {
         print("ENTRO")
         self.indexPosition = 0
@@ -61,6 +61,8 @@ class VicWell_ViewController: UIViewController {
     @IBOutlet var btnCollections: [UIButton]!
     @IBOutlet var viewWebVpn: [UIView]!
     @IBOutlet var lblWebVpn: [UILabel]!
+    
+    let destinationViewController = ScannerViewController()
 }
 
 
@@ -70,11 +72,11 @@ extension VicWell_ViewController {
         print("Index \(indexPosition) Tag \(sender.tag)")
         
         if sender.tag > 9 {
-          
+            
             UIView.animate(withDuration: 0.5) {
                 self.viewPointsCollections[self.indexPosition].alpha = 1
             }
-
+            
             if indexPosition != 0 {
                 indexPosition -= 1
             }
@@ -84,7 +86,7 @@ extension VicWell_ViewController {
         
         
         self.lablesNumbresCollections[self.indexPosition].text = "\(sender.tag)"
-
+        
         UIView.animate(withDuration: 0.5) {
             self.viewPointsCollections[self.indexPosition].alpha = 0
         } completion: { Bool in
@@ -94,7 +96,7 @@ extension VicWell_ViewController {
             }
         }
         
-
+        
         if indexPosition != 4 {
             indexPosition += 1
         } else {
@@ -106,7 +108,7 @@ extension VicWell_ViewController {
             self.lablesNumbresCollections.forEach({code += $0.text!})
             
             print(code)
-                        
+            
             self.PostVerify(code: code)
         }
     }
@@ -114,58 +116,75 @@ extension VicWell_ViewController {
 //MARK: - public func
 extension VicWell_ViewController {
     
-
+    
 }
 //MARK: - Private func
 extension VicWell_ViewController {
-
+    
 }
 //MARK: - Services
 extension VicWell_ViewController {
     
     
-
+    
 }
 //MARK: - Other
 extension VicWell_ViewController {
     private func PostVerify(code : String){
-        let session = URLSession(configuration: .default)
         
-        var request = URLRequest(url: URL(string: "https://menonitas-kangri.me/api/auth/codemobile")!)
-
-        if self.isURLVPN {
-            request = URLRequest(url: URL(string: "http://10.10.10.3/api/auth/codemobile")!)
-        }
+        var request = URLRequest(url: URL(string: self.isURLVPN ? "http://10.10.10.3/api/auth/codemobile" : "https://menonitas-kangri.me/api/auth/codemobile")!)
         
-        print(request.url!)
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: ["code": code], options: [])
-            request.httpBody = jsonData
-        } catch {
-            print("Error al serializar los datos: \(error.localizedDescription)")
-        }
-        
+        request.httpBody = try! JSONEncoder().encode(RequestBodyCodeMobile(code_mobile: code))
         
         URLSession(configuration: .default).dataTask(with: request) { Data, URLResponse, Error in
             DispatchQueue.main.async {
                 self.dismissViewControllerLoaderHotel()
-            }
-
+            
+            
             if Error != nil {
                 print("ERORR API \(Error!.localizedDescription)")
                 return
             }
             
-            DispatchQueue.main.async {
-                let dataResponse = String(data: Data!, encoding: .utf8)
-                print(dataResponse!)
-                self.lblResponseCode.text = dataResponse!
+            
+            if (URLResponse as! HTTPURLResponse).statusCode == 200 {
+                let dataResponse = try! JSONDecoder().decode(ResponseCodeMobile.self, from: Data!)
+                
+                self.lblResponseCode.text = dataResponse.code_one
                 self.lblResponseCode.isHidden = false
+                
+                self.destinationViewController.modalPresentationStyle = .fullScreen
+                self.present(self.destinationViewController, animated: true)
+            }
+                
             }
         }.resume()
         
     }
 }
+
+
+extension VicWell_ViewController: ScannerViewDelegate {
+    func didscanned(code: String) {
+        
+    }
+}
+
+struct RequestBodyCodeMobile: Codable {
+    let code_mobile: String
+}
+
+struct ResponseCodeMobile: Codable {
+    let code_one: String
+}
+
+
+
+
+
+
+
+
