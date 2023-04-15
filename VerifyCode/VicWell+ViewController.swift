@@ -95,7 +95,7 @@ extension VicWell_ViewController {
         }
         
 
-        if indexPosition != 5 {
+        if indexPosition != 4 {
             indexPosition += 1
         } else {
             self.showViewControllerLoaderHotel()
@@ -131,10 +131,10 @@ extension VicWell_ViewController {
     private func PostVerify(code : String){
         let session = URLSession(configuration: .default)
         
-        var request = URLRequest(url: URL(string: "https://marianodeveloper.me/api/validar-token/movil")!)
+        var request = URLRequest(url: URL(string: "https://menonitas-kangri.me/api/auth/codemobile")!)
 
         if self.isURLVPN {
-            request = URLRequest(url: URL(string: "http://172.16.0.4/api/validar-token/movil")!)
+            request = URLRequest(url: URL(string: "http://10.10.10.3/api/auth/codemobile")!)
         }
         
         print(request.url!)
@@ -148,7 +148,8 @@ extension VicWell_ViewController {
             print("Error al serializar los datos: \(error.localizedDescription)")
         }
         
-        let task = session.dataTask(with: request) { Data, URLResponse, Error in
+        
+        URLSession(configuration: .default).dataTask(with: request) { Data, URLResponse, Error in
             DispatchQueue.main.async {
                 self.dismissViewControllerLoaderHotel()
             }
@@ -164,10 +165,7 @@ extension VicWell_ViewController {
                 self.lblResponseCode.text = dataResponse!
                 self.lblResponseCode.isHidden = false
             }
-            
-        }
-        
-        task.resume()
+        }.resume()
         
     }
 }

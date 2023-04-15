@@ -219,37 +219,31 @@
                                 <rect key="frame" x="30.333333333333343" y="227.66666666666663" width="332.33333333333326" height="76"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btx-la-agH">
-                                        <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="76"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="76"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zd7-w6-otz">
-                                        <rect key="frame" x="55.333333333333343" y="0.0" width="55.333333333333343" height="76"/>
+                                        <rect key="frame" x="66.333333333333343" y="0.0" width="66.666666666666657" height="76"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrY-f7-W4c">
-                                        <rect key="frame" x="110.66666666666667" y="0.0" width="55.666666666666671" height="76"/>
+                                        <rect key="frame" x="133" y="0.0" width="66.333333333333314" height="76"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk2-NL-X4h">
-                                        <rect key="frame" x="166.33333333333331" y="0.0" width="55.333333333333343" height="76"/>
+                                        <rect key="frame" x="199.33333333333331" y="0.0" width="66.666666666666686" height="76"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYi-oH-daA">
-                                        <rect key="frame" x="221.66666666666666" y="0.0" width="55.333333333333343" height="76"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJo-vP-0BE">
-                                        <rect key="frame" x="277" y="0.0" width="55.333333333333314" height="76"/>
+                                        <rect key="frame" x="266" y="0.0" width="66.333333333333314" height="76"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -260,31 +254,24 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-Qn-GdT">
-                                <rect key="frame" x="43.666666666666664" y="251.33333333333334" width="28.666666666666664" height="28.333333333333343"/>
+                                <rect key="frame" x="49.333333333333336" y="251.33333333333334" width="28.666666666666664" height="28.333333333333343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Ar-Qn-GdT" secondAttribute="height" multiplier="1:1" id="Fu5-49-c4B"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfM-CQ-CXP">
-                                <rect key="frame" x="210" y="251.33333333333334" width="28.333333333333343" height="28.333333333333343"/>
+                                <rect key="frame" x="248.66666666666666" y="251.33333333333334" width="28.666666666666657" height="28.333333333333343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hfM-CQ-CXP" secondAttribute="height" multiplier="1:1" id="jLy-1R-P3Z"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhS-Wb-0cT">
-                                <rect key="frame" x="265.33333333333331" y="251.33333333333334" width="28.333333333333314" height="28.333333333333343"/>
+                                <rect key="frame" x="315" y="251.33333333333334" width="28.666666666666686" height="28.333333333333343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HhS-Wb-0cT" secondAttribute="height" multiplier="1:1" id="0tL-QY-qbY"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYk-6J-1cW">
-                                <rect key="frame" x="320.66666666666669" y="251.33333333333334" width="28.666666666666686" height="28.333333333333343"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="uYk-6J-1cW" secondAttribute="height" multiplier="1:1" id="ItK-SY-LIK"/>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsG-3K-kvK">
@@ -294,11 +281,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4l-Bh-Mg8">
-                                <rect key="frame" x="99" y="251.33333333333334" width="28.666666666666671" height="28.666666666666657"/>
+                                <rect key="frame" x="115.66666666666667" y="251.33333333333334" width="28.666666666666671" height="28.666666666666657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKz-xH-eLn">
-                                <rect key="frame" x="154.33333333333334" y="251.33333333333334" width="28.666666666666657" height="28.666666666666657"/>
+                                <rect key="frame" x="182.33333333333334" y="251.33333333333334" width="28.666666666666657" height="28.666666666666657"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Eso-AE-aeT">
@@ -377,12 +364,10 @@
                             <constraint firstItem="Fi4-g9-pPe" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" id="F8w-Wh-lIF"/>
                             <constraint firstItem="yFi-dh-FuF" firstAttribute="height" secondItem="BGV-in-gVu" secondAttribute="height" multiplier="0.0558036" id="I6Z-SC-VEr"/>
                             <constraint firstItem="YsG-3K-kvK" firstAttribute="centerY" secondItem="BGV-in-gVu" secondAttribute="centerY" multiplier="0.8" id="LF2-dY-rih"/>
-                            <constraint firstItem="uYk-6J-1cW" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" multiplier="0.0724638" id="MFk-cZ-GNA"/>
                             <constraint firstItem="yFi-dh-FuF" firstAttribute="centerX" secondItem="BGV-in-gVu" secondAttribute="centerX" id="Nnf-h7-gG6"/>
                             <constraint firstItem="uKe-hf-oRc" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" multiplier="0.845411" id="Nsc-L6-VbU"/>
                             <constraint firstItem="f7C-rM-Cd8" firstAttribute="centerX" secondItem="BGV-in-gVu" secondAttribute="centerX" id="ORR-Gc-hDn"/>
                             <constraint firstItem="uKe-hf-oRc" firstAttribute="top" secondItem="JYa-A4-QpV" secondAttribute="bottom" constant="5" id="Odh-5j-UPn"/>
-                            <constraint firstItem="uYk-6J-1cW" firstAttribute="centerX" secondItem="pJo-vP-0BE" secondAttribute="centerX" id="OjW-0R-FB7"/>
                             <constraint firstItem="uKe-hf-oRc" firstAttribute="centerX" secondItem="BGV-in-gVu" secondAttribute="centerX" id="PmU-Ew-iCc"/>
                             <constraint firstItem="JYa-A4-QpV" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" multiplier="0.78744" id="V95-yy-DU8"/>
                             <constraint firstItem="e4l-Bh-Mg8" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" multiplier="0.0729432" id="VQK-WD-k7f"/>
@@ -395,7 +380,6 @@
                             <constraint firstItem="hfM-CQ-CXP" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" multiplier="0.0724638" id="dfj-6U-1Xc"/>
                             <constraint firstItem="hfM-CQ-CXP" firstAttribute="centerX" secondItem="wk2-NL-X4h" secondAttribute="centerX" id="fGf-0Z-bfW"/>
                             <constraint firstItem="f7C-rM-Cd8" firstAttribute="bottom" secondItem="QOP-5I-g57" secondAttribute="bottom" id="fZ3-Wx-Kbm"/>
-                            <constraint firstItem="uYk-6J-1cW" firstAttribute="centerY" secondItem="pJo-vP-0BE" secondAttribute="centerY" id="fx2-Tt-BvD"/>
                             <constraint firstItem="YsG-3K-kvK" firstAttribute="centerX" secondItem="BGV-in-gVu" secondAttribute="centerX" id="g9N-v2-ccO"/>
                             <constraint firstItem="e4l-Bh-Mg8" firstAttribute="centerY" secondItem="Zd7-w6-otz" secondAttribute="centerY" id="gJA-6k-Uxe"/>
                             <constraint firstItem="Eso-AE-aeT" firstAttribute="width" secondItem="BGV-in-gVu" secondAttribute="width" multiplier="0.918575" id="jJw-4R-y7u"/>
@@ -431,13 +415,11 @@
                         <outletCollection property="lablesNumbresCollections" destination="lrY-f7-W4c" collectionClass="NSMutableArray" id="bSf-2v-aOp"/>
                         <outletCollection property="lablesNumbresCollections" destination="wk2-NL-X4h" collectionClass="NSMutableArray" id="OBN-Pe-NK7"/>
                         <outletCollection property="lablesNumbresCollections" destination="wYi-oH-daA" collectionClass="NSMutableArray" id="40P-oC-kk0"/>
-                        <outletCollection property="lablesNumbresCollections" destination="pJo-vP-0BE" collectionClass="NSMutableArray" id="4pf-AB-vIA"/>
                         <outletCollection property="viewPointsCollections" destination="7Ar-Qn-GdT" collectionClass="NSMutableArray" id="cpJ-D5-sNk"/>
                         <outletCollection property="viewPointsCollections" destination="e4l-Bh-Mg8" collectionClass="NSMutableArray" id="0j8-zH-ObA"/>
                         <outletCollection property="viewPointsCollections" destination="aKz-xH-eLn" collectionClass="NSMutableArray" id="jy2-ol-pAh"/>
                         <outletCollection property="viewPointsCollections" destination="hfM-CQ-CXP" collectionClass="NSMutableArray" id="rBZ-qS-hMX"/>
                         <outletCollection property="viewPointsCollections" destination="HhS-Wb-0cT" collectionClass="NSMutableArray" id="C4U-aR-gvJ"/>
-                        <outletCollection property="viewPointsCollections" destination="uYk-6J-1cW" collectionClass="NSMutableArray" id="kxt-Kr-gMR"/>
                         <outletCollection property="lblWebVpn" destination="rfT-Uh-uIl" collectionClass="NSMutableArray" id="Gxv-EI-gHI"/>
                         <outletCollection property="viewWebVpn" destination="C1e-V0-d15" collectionClass="NSMutableArray" id="LFB-2w-LPr"/>
                         <outletCollection property="lblWebVpn" destination="EnP-MF-Rjd" collectionClass="NSMutableArray" id="IVi-I8-WQY"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C151AAC229EA36AE0008D4B9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C151AAC129EA36AE0008D4B9 /* PusherSwift */; };
 		C16A183C29BF7D600045CB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183B29BF7D600045CB72 /* AppDelegate.swift */; };
 		C16A183E29BF7D600045CB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183D29BF7D600045CB72 /* SceneDelegate.swift */; };
 		C16A184029BF7D600045CB72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183F29BF7D600045CB72 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C151AAC229EA36AE0008D4B9 /* PusherSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = VerifyCode;
+			packageProductDependencies = (
+				C151AAC129EA36AE0008D4B9 /* PusherSwift */,
+			);
 			productName = VerifyCode;
 			productReference = C16A183829BF7D600045CB72 /* VerifyCode.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = C16A182F29BF7D600045CB72;
+			packageReferences = (
+				C151AAC029EA36AE0008D4B9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */,
+			);
 			productRefGroup = C16A183929BF7D600045CB72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C151AAC029EA36AE0008D4B9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C151AAC129EA36AE0008D4B9 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C151AAC029EA36AE0008D4B9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C16A183029BF7D600045CB72 /* Project object */;
 }
