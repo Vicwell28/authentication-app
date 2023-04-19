@@ -75,9 +75,7 @@ extension UIViewController {
         var idxViews : Int = 0
         
         repeatAnimation = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { Timer in
-            
-//            print("\(idxViews) SE ESTA REPITIENDO \(Timer)")
-            
+                        
             UIView.animate(withDuration: 0.15) {
                 
                 if dataSourceView.isEmpty {
@@ -122,9 +120,9 @@ extension UIViewController {
         } completion: { Bool in
             
             repeatAnimation!.invalidate()
-
+            
             dataSourceView.removeAll()
-
+            
             firstCircleView?.removeFromSuperview()
             secondCircleView?.removeFromSuperview()
             thirdCircleView?.removeFromSuperview()

@@ -18,7 +18,8 @@ class ViewController: UIViewController {
 }
 
 
-extension UIView {
+@IBDesignable
+class MyCustomView: UIView {
     @IBInspectable var shadowColor : UIColor? {
         get {
             if let color = layer.shadowColor {
@@ -28,6 +29,7 @@ extension UIView {
         }
         set {
             layer.shadowColor = newValue?.cgColor
+            setNeedsLayout()
         }
     }
     @IBInspectable var shadowOpacity : Float{
@@ -36,6 +38,7 @@ extension UIView {
         }
         set{
             layer.shadowOpacity = newValue
+            setNeedsLayout()
         }
     }
     @IBInspectable var shadowOffset : CGSize{
@@ -44,6 +47,7 @@ extension UIView {
         }
         set{
             layer.shadowOffset = newValue
+            setNeedsLayout()
         }
     }
     @IBInspectable var maskToBounds : Bool{
@@ -52,6 +56,7 @@ extension UIView {
         }
         set{
             layer.masksToBounds = newValue
+            setNeedsLayout()
         }
     }
     @IBInspectable var cornerRadius : CGFloat{
@@ -60,6 +65,7 @@ extension UIView {
         }
         set{
             layer.cornerRadius = newValue
+            setNeedsLayout()
         }
     }
     @IBInspectable var borderWidth : CGFloat{
@@ -68,6 +74,7 @@ extension UIView {
         }
         set {
             layer.borderWidth =  newValue
+            setNeedsLayout()
         }
     }
     @IBInspectable var borderColor : UIColor? {
@@ -79,6 +86,7 @@ extension UIView {
         }
         set {
             layer.borderColor = newValue?.cgColor
+            setNeedsLayout()
         }
     }
     @IBInspectable var shadowRadius : CGFloat {
@@ -87,8 +95,8 @@ extension UIView {
         }
         set {
             layer.shadowRadius = newValue
+            setNeedsLayout()
         }
     }
 }
-
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C151AAC229EA36AE0008D4B9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C151AAC129EA36AE0008D4B9 /* PusherSwift */; };
 		C151AAC429EB5EFF0008D4B9 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151AAC329EB5EFF0008D4B9 /* ScannerViewController.swift */; };
+		C151AAC629EB60F50008D4B9 /* PusherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151AAC529EB60F50008D4B9 /* PusherViewModel.swift */; };
+		C151AAC829EB6B0D0008D4B9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151AAC729EB6B0D0008D4B9 /* TestViewController.swift */; };
 		C16A183C29BF7D600045CB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183B29BF7D600045CB72 /* AppDelegate.swift */; };
 		C16A183E29BF7D600045CB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183D29BF7D600045CB72 /* SceneDelegate.swift */; };
 		C16A184029BF7D600045CB72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A183F29BF7D600045CB72 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		C151AAC329EB5EFF0008D4B9 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		C151AAC529EB60F50008D4B9 /* PusherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherViewModel.swift; sourceTree = "<group>"; };
+		C151AAC729EB6B0D0008D4B9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C16A183829BF7D600045CB72 /* VerifyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerifyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16A183B29BF7D600045CB72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C16A183D29BF7D600045CB72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,14 +70,16 @@
 			children = (
 				C16A183B29BF7D600045CB72 /* AppDelegate.swift */,
 				C16A183D29BF7D600045CB72 /* SceneDelegate.swift */,
-				C16A183F29BF7D600045CB72 /* ViewController.swift */,
 				C16A184129BF7D600045CB72 /* Main.storyboard */,
 				C16A184429BF7D9B0045CB72 /* Assets.xcassets */,
 				C16A184629BF7D9B0045CB72 /* LaunchScreen.storyboard */,
 				C16A184929BF7D9B0045CB72 /* Info.plist */,
+				C16A183F29BF7D600045CB72 /* ViewController.swift */,
 				C16A184F29BF80C10045CB72 /* VicWell+ViewController.swift */,
 				C16A185129BF83390045CB72 /* Loader+Extension.swift */,
 				C151AAC329EB5EFF0008D4B9 /* ScannerViewController.swift */,
+				C151AAC529EB60F50008D4B9 /* PusherViewModel.swift */,
+				C151AAC729EB6B0D0008D4B9 /* TestViewController.swift */,
 			);
 			path = VerifyCode;
 			sourceTree = "<group>";
@@ -157,9 +163,11 @@
 			files = (
 				C16A185229BF83390045CB72 /* Loader+Extension.swift in Sources */,
 				C151AAC429EB5EFF0008D4B9 /* ScannerViewController.swift in Sources */,
+				C151AAC829EB6B0D0008D4B9 /* TestViewController.swift in Sources */,
 				C16A184029BF7D600045CB72 /* ViewController.swift in Sources */,
 				C16A183C29BF7D600045CB72 /* AppDelegate.swift in Sources */,
 				C16A185029BF80C10045CB72 /* VicWell+ViewController.swift in Sources */,
+				C151AAC629EB60F50008D4B9 /* PusherViewModel.swift in Sources */,
 				C16A183E29BF7D600045CB72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +318,7 @@
 				DEVELOPMENT_TEAM = RG9DD7MR44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VerifyCode/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,6 +347,7 @@
 				DEVELOPMENT_TEAM = RG9DD7MR44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VerifyCode/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

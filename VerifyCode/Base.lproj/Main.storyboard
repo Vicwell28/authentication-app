@@ -193,7 +193,7 @@
                                                             <imageReference key="image" image="delete.backward" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="onClickNumberAction:" destination="g6J-iS-zsi" eventType="touchUpInside" id="ygk-eE-fUX"/>
+                                                            <action selector="StartScannQR:" destination="g6J-iS-zsi" eventType="touchUpInside" id="tzc-R7-Ito"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -428,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsH-nl-WId" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692.36641221374043" y="-808.45070422535218"/>
+            <point key="canvasLocation" x="573" y="-795"/>
         </scene>
     </scenes>
     <resources>
